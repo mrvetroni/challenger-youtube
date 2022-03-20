@@ -1,190 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Youtube Clone</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Youtube Clone</title>
 </head>
+
 <body>
-    <header class="header">
-        <a href="#">
-            <img src="logo.png" alt="Youtube Logo" class="youtube-logo">
+  
+  <header class="header">
+    <a href="index.html">
+      <img src="logo.png" alt="Youtube Logo" class="youtube-logo">
+    </a>
+    <form class="search-bar">
+      <input class="search-input" type="search" placeholder="Pesquisar" aria-label="Search" />
+      <button type="submit" class="search-btn">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </form>
+
+    <div class="menu-icons">
+
+      <a href="#">
+        <ion-icon name="videocam"></ion-icon>
+      </a>
+
+      <a href="#">
+        <ion-icon class="apps" name="apps"></ion-icon>
+      </a>
+
+      <a href="#">
+        <ion-icon class="notifications" name="notifications-outline"></ion-icon>
+      </a>
+
+
+      <a href="#">
+        <img class="menu-channel-icon"
+          src="https://yt3.ggpht.com/yti/APfAmoEi5nCEuastA66DI6gxSBIw_TXScc2NbPSagQ=s88-c-k-c0x00ffffff-no-rj-mo"
+          alt="Your Channel">
+      </a>
+    </div>
+    <!--menu-icons-->
+  </header>
+  
+
+  <div class="categories">
+    <section class="category-section">
+      <button class="category active">Tudo</button>
+      <button class="category">Games</button>
+      <button class="category">Programação</button>
+      <button class="category">Música</button>
+      <button class="category">Documentários</button>
+      <button class="category">Filmes</button>
+      <button class="category">LiveStreams</button>
+      <button class="category">Desenhos</button>
+      <button class="category">Vlogs</button>
+      <button class="category">Outros</button>
+    </section>
+    <!--category-section-->
+  </div>
+  <!--categories-->
+
+
+  <div class="videos">
+    <section class="video-section">
+
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="capadevmedia.png" />
         </a>
-        <form class="search-bar">
-            <input class="search-input" type="search" placeholder="Search" aria-label="Search"/>
-            <button type="submit" class="search-btn">
-                <img src="magnify.svg">
-            </button>
-        </form>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="devmedia.jpg" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Testando HTML e CSS do estagiário</a>
+            <a href="#" class="video-channel-name">DevMedia</a>
 
-        <div class="menu-icons">
-            <a href="#">
-                <img src="video-plus.svg" alt="Upload Video">
+            <div class="video-metadata">
+              <span>43 mil visualizações</span>
+              •
+              <span>há 1 mês</span>
+            </div>
+            <!--video-metadata-->
+          </div>
+          <!--video-details-->
+        </div>
+        <!--video-bottom-section-->
+      </article>
+
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="wowtumb.png" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="wow.jpg" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">AWC 2022 Cup 1 | EU Day 1 | Kungarna vs TBD
             </a>
+            <a href="#" class="video-channel-name">World of Warcraft</a>
 
-            <a href="#">
-                <img src="apps.svg" alt="Apps">
+            <div class="video-ao-vivo">
+              <span>6,5 mil assistindo</span>
+
+              <p class="aovivo">AO VIVO AGORA</p>
+            </div>
+            <!--video-metadata-->
+          </div>
+          <!--video-details-->
+        </div>
+        <!--video-bottom-section-->
+      </article>
+
+
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="gomes.png" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon"
+              src="https://yt3.ggpht.com/LcsXvLzdWavvfK_uiBN_Oy2unclTuWg-mRWDd2YyCL8kJQiN-OVXnlzH4oZMLQR4PMmzsUS9JA=s68-c-k-c0x00ffffff-no-rj"
+              alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">JOÃO GOMES | TARCÍSIO DO ACORDEON & VITOR FERNANDES | MIX DO PISEIRO
+
+
             </a>
+            <a href="#" class="video-channel-name">Caio Souza Repertórios</a>
 
-            <a href="#">
-                <img src="bell.svg" alt="Notification">
+            <div class="video-metadata">
+              <span>626 mil visualizações</span>
+              •
+              <span>há 1 mês</span>
+            </div>
+            <!--video-metadata-->
+          </div>
+          <!--video-details-->
+        </div>
+        <!--video-bottom-section-->
+      </article>
+
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="tanjirotumb.png" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="sete.jpg" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">O VERDADEIRO MOTIVO DA ESPADA DO TANJIRO SER PRETA EM DEMON SLAYER!
+
+
+              há 7 meses</a>
+            <a href="#" class="video-channel-name">Sete</a>
+
+            <div class="video-metadata">
+              <span>288 mil visualizações</span>
+              •
+              <span>há 7 meses</span>
+            </div>
+            <!--video-metadata-->
+          </div>
+          <!--video-details-->
+        </div>
+        <!--video-bottom-section-->
+      </article>
+
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="danki.png" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon"
+              src="https://yt3.ggpht.com/ytc/AKedOLSRCKD2bWcgGtOlAfUUgUPaGDJuE54_PkeYgmEjdw=s68-c-k-c0x00ffffff-no-rj"
+              alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">🔥 VAMOS CRIAR UM WEBSITE COMPLETO E RESPONSIVO (HTML5, CSS3, JS)
+
+
             </a>
+            <a href="#" class="video-channel-name">Danki Code</a>
 
-            
-            <a href="#">
-                <img class="menu-channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="Your Channel">
+            <div class="video-metadata">
+              <span>63 mil visualizações</span>
+              •
+              <span>Transmitido há 1 ano</span>
+            </div>
+            <!--video-metadata-->
+          </div>
+          <!--video-details-->
+        </div>
+        <!--video-bottom-section-->
+      </article>
+
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="luffy.png" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon"
+              src="https://yt3.ggpht.com/ytc/AKedOLSMXQp2EeXv9px-Ut-whv0ZMUfS7ssbF9TfBwYRng=s68-c-k-c0x00ffffff-no-rj"
+              alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">JOYBOY REVELADO E CONFIRMADO QUAL SUA AKUMA NO MI -O DESPERTAR E DE LUFFY
+              EXPLICADO- ONE PIECE 1043
+
+
             </a>
-        </div><!--menu-icons-->
-    </header>
+            <a href="#" class="video-channel-name">Canal MangaQ</a>
 
-    <div class="categories">
-        <section class="category-section">
-            <button class="category active">Tudo</button>
-            <button class="category">Games</button>
-            <button class="category">Programação</button>
-            <button class="category">Música</button>
-            <button class="category">Documentários</button>
-            <button class="category">Filmes</button>
-            <button class="category">LiveStreams</button>
-            <button class="category">Desenhos</button>
-            <button class="category">Vlogs</button>
-            <button class="category">Outros</button>
-        </section><!--category-section-->
-    </div><!--categories-->
-
-    <div class="videos">
-        <section class="video-section">
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-               <img class="thumbnail-image" src="https://i.ytimg.com/vi/hgFQgtsYG30/maxresdefault.jpg" />
-            </a>
-            <div class="video-bottom-section">
-                <a href="#">
-                    <img class="channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="">
-                </a>
-                <div class="video-details">
-                    <a href="#" class="video-title">Video Title</a>
-                    <a href="#" class="video-channel-name">Gabriel Gouvea</a>
-
-                    <div class="video-metadata">
-                        <span>1.5 M views</span>
-                        •
-                        <span>3 weeks ago</span>
-                    </div><!--video-metadata-->
-                </div><!--video-details-->
-            </div><!--video-bottom-section-->
-            </article>
-
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-               <img class="thumbnail-image" src="https://i.ytimg.com/vi/hgFQgtsYG30/maxresdefault.jpg" />
-            </a>
-            <div class="video-bottom-section">
-                <a href="#">
-                    <img class="channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="">
-                </a>
-                <div class="video-details">
-                    <a href="#" class="video-title">Video Title</a>
-                    <a href="#" class="video-channel-name">Gabriel Gouvea</a>
-
-                    <div class="video-metadata">
-                        <span>1.5 M views</span>
-                        •
-                        <span>3 weeks ago</span>
-                    </div><!--video-metadata-->
-                </div><!--video-details-->
-            </div><!--video-bottom-section-->
-            </article>
-
-
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-               <img class="thumbnail-image" src="https://i.ytimg.com/vi/hgFQgtsYG30/maxresdefault.jpg" />
-            </a>
-            <div class="video-bottom-section">
-                <a href="#">
-                    <img class="channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="">
-                </a>
-                <div class="video-details">
-                    <a href="#" class="video-title">Video Title</a>
-                    <a href="#" class="video-channel-name">Gabriel Gouvea</a>
-
-                    <div class="video-metadata">
-                        <span>1.5 M views</span>
-                        •
-                        <span>3 weeks ago</span>
-                    </div><!--video-metadata-->
-                </div><!--video-details-->
-            </div><!--video-bottom-section-->
-            </article>
-
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-               <img class="thumbnail-image" src="https://i.ytimg.com/vi/hgFQgtsYG30/maxresdefault.jpg" />
-            </a>
-            <div class="video-bottom-section">
-                <a href="#">
-                    <img class="channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="">
-                </a>
-                <div class="video-details">
-                    <a href="#" class="video-title">Video Title</a>
-                    <a href="#" class="video-channel-name">Gabriel Gouvea</a>
-
-                    <div class="video-metadata">
-                        <span>1.5 M views</span>
-                        •
-                        <span>3 weeks ago</span>
-                    </div><!--video-metadata-->
-                </div><!--video-details-->
-            </div><!--video-bottom-section-->
-            </article>
-
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-               <img class="thumbnail-image" src="https://i.ytimg.com/vi/hgFQgtsYG30/maxresdefault.jpg" />
-            </a>
-            <div class="video-bottom-section">
-                <a href="#">
-                    <img class="channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="">
-                </a>
-                <div class="video-details">
-                    <a href="#" class="video-title">Video Title</a>
-                    <a href="#" class="video-channel-name">Gabriel Gouvea</a>
-
-                    <div class="video-metadata">
-                        <span>1.5 M views</span>
-                        •
-                        <span>3 weeks ago</span>
-                    </div><!--video-metadata-->
-                </div><!--video-details-->
-            </div><!--video-bottom-section-->
-            </article>
-
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-               <img class="thumbnail-image" src="https://i.ytimg.com/vi/hgFQgtsYG30/maxresdefault.jpg" />
-            </a>
-            <div class="video-bottom-section">
-                <a href="#">
-                    <img class="channel-icon" src="https://media-exp1.licdn.com/dms/image/C4E03AQHX-Nts_3s31w/profile-displayphoto-shrink_200_200/0/1609356110333?e=1622678400&v=beta&t=mwCE2N93ikOvDFvgwdtrWHIG_1-JGrM27In6ShjvEuY" alt="">
-                </a>
-                <div class="video-details">
-                    <a href="#" class="video-title">Video Title</a>
-                    <a href="#" class="video-channel-name">Gabriel Gouvea</a>
-
-                    <div class="video-metadata">
-                        <span>1.5 M views</span>
-                        •
-                        <span>3 weeks ago</span>
-                    </div><!--video-metadata-->
-                </div><!--video-details-->
-            </div><!--video-bottom-section-->
-            </article>
-        </section><!--video-section-->
-    </div><!--videos-->
+            <div class="video-metadata">
+              <span>395 mil visualizações</span>
+              •
+              <span>há 7 dias</span>
+            </div>
+            <!--video-metadata-->
+          </div>
+          <!--video-details-->
+        </div>
+        <!--video-bottom-section-->
+      </article>
+    </section>
+    <!--video-section-->
+  </div>
+  <!--videos-->
 </body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 </html>
